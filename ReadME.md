@@ -22,11 +22,11 @@ This project uses a YOLOv8 model trained to detect rice using a webcam feed. Whe
    conda create -n yolov8 python=3.10
    conda activate yolov8
 
-3. Run this command
+3. **Run this command**:
+   ```bash
+   pip install torch==2.7.1+cu118 torchvision==0.22.1+cu118 torchaudio==2.7.1+cu118 --index-url https://download.pytorch.org/whl/cu118
+   pip install ultralytics opencv-python pandas matplotlib numpy scipy requests tqdm py-cpuinfo fsspec jinja2
 
-pip install torch==2.7.1+cu118 torchvision==0.22.1+cu118 torchaudio==2.7.1+cu118 --index-url https://download.pytorch.org/whl/cu118
-pip install ultralytics opencv-python pandas matplotlib numpy scipy requests tqdm py-cpuinfo fsspec jinja2
-
-To run model
+**To run model**:
 
 Activate environment using "conda activate ENV_NAME", then change the directory of the model on webcam_detect.py then run python webcam_detect.py
